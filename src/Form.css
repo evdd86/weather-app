@@ -1,0 +1,29 @@
+.Form .input-search-city {
+  border: 1px solid pink;
+  color: rgb(130, 63, 146);
+}
+.Form .button-form {
+  border: 1px solid pink;
+  color: grey;
+  background-color: transparent;
+}
+.Form .button-form:hover {
+  background-color: pink;
+}
+
+@media screen and (max-width: 640px) {
+  .Form .input-search-city {
+    border: 1px solid pink;
+    color: rgb(130, 63, 146);
+    font-size: 14px;
+  }
+  .Form .button-form {
+    border: 1px solid pink;
+    color: grey;
+    background-color: transparent;
+    font-size: 14px;
+  }
+  .Form .button-form:hover {
+    background-color: pink;
+  }
+}

@@ -1,0 +1,35 @@
+.Cards .card {
+  background-color: rgb(130, 63, 146, 0.4);
+  border: none;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.Cards .card-next {
+  width: 85px;
+  color: pink;
+  font-family: "Text Me One", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 640px) {
+  .Cards .card {
+    background-color: rgb(130, 63, 146, 0.4);
+    border: none;
+    border-radius: 10px;
+    margin: 0 2px;
+    flex-wrap: wrap;
+  }
+
+  .Cards .card-next {
+    width: 50px;
+    color: pink;
+    font-family: "Text Me One", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px 2px;
+  }
+}

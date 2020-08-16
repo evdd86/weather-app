@@ -1,0 +1,15 @@
+.Conversion .button {
+  border-radius: 50px;
+  border: 1px solid pink;
+  box-shadow: none;
+  color: grey;
+  margin: 0 10px;
+}
+.Conversion .button:focus {
+  outline: 0;
+}
+.Conversion .choose-unit {
+  font-family: "Text Me One", sans-serif;
+  font-size: 16px;
+  color: grey;
+}

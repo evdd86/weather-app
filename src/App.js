@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./Form";
+import Overview from "./Overview";
+import Current from "./Current";
+import Forecast from "./Forecast";
+import Conversion from "./Conversion";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <section className="weather-app border border-light">
+          <section className="search-city">
+            <Form />
+          </section>
+          <section className="weather-today">
+            <Overview />
+            <Current />
+          </section>
+          <section className="weather-next">
+            <Forecast />
+          </section>
+          <section className="unit-conversion">
+            <Conversion />
+          </section>
+        </section>
+      </div>
+      <div className="footer">
+        <small className="open-code">
+          <a
+            href="https://github.com/evdd86/my-weather-app-final-project.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open-source code
+          </a>
+          <br />
+          Coded by Ellen Van der Donckt
+        </small>
+      </div>
     </div>
   );
 }
-
-export default App;

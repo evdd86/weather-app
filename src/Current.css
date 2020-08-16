@@ -1,0 +1,92 @@
+.Current .card-current-weather {
+  background-color: rgb(130, 63, 146, 0.4);
+  border: none;
+  border-radius: 10px;
+  width: 520px;
+  color: pink;
+  font-family: "Text Me One", sans-serif;
+  font-size: 20px;
+  margin: 15px 0 5px 0;
+}
+.Current .card-body-current-weather {
+  padding: 10px;
+}
+.Current .description-current {
+  text-transform: uppercase;
+}
+.Current .min-max-current {
+  text-align: right;
+}
+.Current .emoji-current {
+  font-size: 100px;
+  text-align: center;
+}
+.Current .temperature-current {
+  font-size: 100px;
+  text-align: center;
+}
+.Current .humidity-current {
+  text-align: left;
+}
+.Current .windspeed-current {
+  text-align: center;
+}
+.Current .cloudiness-current {
+  text-align: right;
+}
+.Current .time-current {
+  font-family: "Text Me One", sans-serif;
+  font-size: 16px;
+  text-transform: initial;
+  color: grey;
+}
+
+@media screen and (max-width: 640px) {
+  .Current .card-current-weather {
+    background-color: rgb(130, 63, 146, 0.4);
+    border: none;
+    border-radius: 10px;
+    width: 520px;
+    color: pink;
+    font-family: "Text Me One", sans-serif;
+    font-size: 20px;
+    margin: 15px 0 5px 0;
+  }
+  .Current .card-body-current-weather {
+    padding: 10px;
+  }
+  .Current .description-current {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .Current .min-max-current {
+    text-align: right;
+    font-size: 16px;
+  }
+  .Current .emoji-current {
+    text-align: center;
+    font-size: 60px;
+  }
+  .Current .temperature-current {
+    text-align: center;
+    font-size: 50px;
+  }
+  .Current .humidity-current {
+    text-align: left;
+    font-size: 16px;
+  }
+  .Current .windspeed-current {
+    text-align: center;
+    font-size: 16px;
+  }
+  .Current .cloudiness-current {
+    text-align: right;
+    font-size: 16px;
+  }
+  .Current .time-current {
+    font-family: "Text Me One", sans-serif;
+    font-size: 16px;
+    text-transform: initial;
+    color: grey;
+  }
+}

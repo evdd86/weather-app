@@ -1,0 +1,39 @@
+.Overview .current-location {
+  font-family: "Cabin Sketch", cursive;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: rgb(130, 63, 146, 0.8);
+}
+.Overview .current-date {
+  font-family: "Text Me One", sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: grey;
+}
+.Overview .current-feel {
+  font-family: "Text Me One", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(130, 63, 146, 0.8);
+}
+
+@media screen and (max-width: 640px) {
+  .Overview .current-location {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(130, 63, 146, 0.8);
+  }
+  .Overview .current-date {
+    font-family: "Text Me One", sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: grey;
+  }
+  .Overview .current-feel {
+    font-family: "Text Me One", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(130, 63, 146, 0.8);
+  }
+}

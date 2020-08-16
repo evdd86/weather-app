@@ -29,7 +29,7 @@ export default function App() {
       <div className="footer">
         <small className="open-code">
           <a
-            href="https://github.com/evdd86/my-weather-app-final-project.git"
+            href="https://github.com/evdd86/weather-app.git"
             target="_blank"
             rel="noopener noreferrer"
           >

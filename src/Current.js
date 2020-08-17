@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate.js";
+import FormattedTime from "./FormattedTime.js";
 import "./Current.css";
 
 export default function Current(props) {
@@ -8,6 +10,7 @@ export default function Current(props) {
   function showWeather(response) {
     setWeatherData({
       ready: true,
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       feel: response.data.main.feels_like,
       temperature: response.data.main.temp,
@@ -17,7 +20,7 @@ export default function Current(props) {
       humidity: response.data.main.humidity,
       windspeed: response.data.wind.speed,
       cloudiness: response.data.clouds.all,
-      iconUrl: `https://openweathermap.org/img/wn/${response.weather.icon}@2x.png`,
+      // iconUrl: `https://openweathermap.org/img/wn/${response.weather.icon}@2x.png`,
     });
   }
 
@@ -25,7 +28,7 @@ export default function Current(props) {
     return (
       <div className="Current">
         <div className="d-flex flex-row justify-content-center current-date">
-          Mon, 27 JUL
+          <FormattedDate date={weatherData.date} />
         </div>
         <div className="d-flex flex-row justify-content-center current-location">
           {weatherData.city}
@@ -77,7 +80,7 @@ export default function Current(props) {
           </div>
         </div>
         <div className="d-flex flex-row justify-content-center time-current">
-          Last updated at 14:50
+          <FormattedTime time={weatherData.date} />
         </div>
       </div>
     );

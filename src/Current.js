@@ -1,9 +1,19 @@
 import React from "react";
+import axios from "axios";
 import "./Current.css";
 
 export default function Current() {
   return (
     <div className="Current">
+      <div className="d-flex flex-row justify-content-center current-date">
+        Mon, 27 JUL
+      </div>
+      <div className="d-flex flex-row justify-content-center current-location">
+        Brussels
+      </div>
+      <div className="d-flex flex-row justify-content-center current-feel">
+        Feels like 10°C
+      </div>
       <div className="d-flex flex-row justify-content-center">
         <div className="card card-current-weather">
           <div className="card-body card-body-current-weather">

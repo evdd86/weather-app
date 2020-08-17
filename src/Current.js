@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Current.css";
 
-export default function Current() {
+export default function Current(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function showWeather(response) {
@@ -17,7 +17,7 @@ export default function Current() {
       humidity: response.data.main.humidity,
       windspeed: response.data.wind.speed,
       cloudiness: response.data.clouds.all,
-      iconUrl: `http://openweathermap.org/img/wn/${response.weather.icon}@2x.png`,
+      iconUrl: `https://openweathermap.org/img/wn/${response.weather.icon}@2x.png`,
     });
   }
 
@@ -84,8 +84,7 @@ export default function Current() {
   } else {
     const apiKey = "5105e9ba47cefb06b8ba8c75ae83f74e";
     let unit = "metric";
-    let city = "Brussels";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=${unit}`;
 
     axios.get(apiUrl).then(showWeather);
 

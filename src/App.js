@@ -15,7 +15,7 @@ export default function App() {
             <Form />
           </section>
           <section className="weather-today">
-            <Current />
+            <Current defaultCity="Brussels" />
           </section>
           <section className="weather-next">
             <Forecast />

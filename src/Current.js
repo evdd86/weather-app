@@ -20,7 +20,7 @@ export default function Current(props) {
       humidity: response.data.main.humidity,
       windspeed: response.data.wind.speed,
       cloudiness: response.data.clouds.all,
-      // iconUrl: `https://openweathermap.org/img/wn/${response.weather.icon}@2x.png`,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 

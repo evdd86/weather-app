@@ -35,10 +35,6 @@
 .Current .min-max-current {
   text-align: right;
 }
-.Current .icon {
-  font-size: 100px;
-  text-align: center;
-}
 .Current .temperature-current {
   font-size: 100px;
   text-align: center;

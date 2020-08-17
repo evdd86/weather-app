@@ -19,8 +19,6 @@ export default function FormattedDate(props) {
   ];
   let date = props.date.getDate();
   let month = months[props.date.getMonth()];
-  let hours = props.date.getHours();
-  let minutes = props.date.getMinutes();
 
   return (
     <div className="FormattedDate">

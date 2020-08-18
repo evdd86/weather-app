@@ -1,11 +1,11 @@
-.Cards .card {
+.WeatherForecast .card {
   background-color: rgb(130, 63, 146, 0.4);
   border: none;
   border-radius: 10px;
   margin: 0 5px;
 }
 
-.Cards .card-next {
+.WeatherForecast .card-next {
   width: 85px;
   color: pink;
   font-family: "Text Me One", sans-serif;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .Cards .card {
+  .WeatherForecast .card {
     background-color: rgb(130, 63, 146, 0.4);
     border: none;
     border-radius: 10px;
@@ -24,7 +24,7 @@
     flex-wrap: wrap;
   }
 
-  .Cards .card-next {
+  .WeatherForecast .card-next {
     width: 50px;
     color: pink;
     font-family: "Text Me One", sans-serif;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import CurrentInfo from "./CurrentInfo.js";
+import WeatherForecast from "./WeatherForecast.js";
 import "./Form.css";
 
 export default function Form(props) {
@@ -12,6 +13,8 @@ export default function Form(props) {
       ready: true,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
+      lat: response.data.coord.lat,
+      lon: response.data.coord.lon,
       feel: response.data.main.feels_like,
       temperature: response.data.main.temp,
       mintemp: response.data.main.temp_min,
@@ -71,6 +74,11 @@ export default function Form(props) {
           </form>
         </div>
         <CurrentInfo data={weatherData} />
+        <WeatherForecast
+          city={weatherData.city}
+          lat={weatherData.lat}
+          lon={weatherData.lon}
+        />
       </div>
     );
   } else {

@@ -1,22 +1,22 @@
-.Current .current-location {
+.CurrentInfo .current-location {
   font-family: "Cabin Sketch", cursive;
   font-size: 60px;
   text-transform: uppercase;
   color: rgb(130, 63, 146, 0.8);
 }
-.Current .current-date {
+.CurrentInfo .current-date {
   font-family: "Text Me One", sans-serif;
   font-size: 20px;
   text-transform: capitalize;
   color: grey;
 }
-.Current .current-feel {
+.CurrentInfo .current-feel {
   font-family: "Text Me One", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   color: rgb(130, 63, 146, 0.8);
 }
-.Current .card-current-weather {
+.CurrentInfo .card-current-weather {
   background-color: rgb(130, 63, 146, 0.4);
   border: none;
   border-radius: 10px;
@@ -26,36 +26,36 @@
   font-size: 20px;
   margin: 15px 0 5px 0;
 }
-.Current .card-body-current-weather {
+.CurrentInfo .card-body-current-weather {
   padding: 10px;
 }
-.Current .description-current {
+.CurrentInfo .description-current {
   text-transform: uppercase;
 }
-.Current .min-max-current {
+.CurrentInfo .min-max-current {
   text-align: right;
 }
 img.icon {
   width: 150px;
   height: 150px;
 }
-.Current .emoji-current {
+.CurrentInfo .emoji-current {
   text-align: center;
 }
-.Current .temperature-current {
+.CurrentInfo .temperature-current {
   font-size: 100px;
   text-align: center;
 }
-.Current .humidity-current {
+.CurrentInfo .humidity-current {
   text-align: left;
 }
-.Current .windspeed-current {
+.CurrentInfo .windspeed-current {
   text-align: center;
 }
-.Current .cloudiness-current {
+.CurrentInfo .cloudiness-current {
   text-align: right;
 }
-.Current .time-current {
+.CurrentInfo .time-current {
   font-family: "Text Me One", sans-serif;
   font-size: 16px;
   text-transform: initial;
@@ -63,25 +63,25 @@ img.icon {
 }
 
 @media screen and (max-width: 640px) {
-  .Current .current-location {
+  .CurrentInfo .current-location {
     font-family: "Cabin Sketch", cursive;
     font-size: 40px;
     text-transform: uppercase;
     color: rgb(130, 63, 146, 0.8);
   }
-  .Current .current-date {
+  .CurrentInfo .current-date {
     font-family: "Text Me One", sans-serif;
     font-size: 18px;
     text-transform: capitalize;
     color: grey;
   }
-  .Current .current-feel {
+  .CurrentInfo .current-feel {
     font-family: "Text Me One", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     color: rgb(130, 63, 146, 0.8);
   }
-  .Current .card-current-weather {
+  .CurrentInfo .card-current-weather {
     background-color: rgb(130, 63, 146, 0.4);
     border: none;
     border-radius: 10px;
@@ -91,14 +91,14 @@ img.icon {
     font-size: 20px;
     margin: 15px 0 5px 0;
   }
-  .Current .card-body-current-weather {
+  .CurrentInfo .card-body-current-weather {
     padding: 10px;
   }
-  .Current .description-current {
+  .CurrentInfo .description-current {
     text-transform: uppercase;
     font-size: 16px;
   }
-  .Current .min-max-current {
+  .CurrentInfo .min-max-current {
     text-align: right;
     font-size: 16px;
   }
@@ -106,26 +106,26 @@ img.icon {
     width: 60px;
     height: 60px;
   }
-  .Current .emoji-current {
+  .CurrentInfo .emoji-current {
     text-align: center;
   }
-  .Current .temperature-current {
+  .CurrentInfo .temperature-current {
     text-align: center;
     font-size: 50px;
   }
-  .Current .humidity-current {
+  .CurrentInfo .humidity-current {
     text-align: left;
     font-size: 16px;
   }
-  .Current .windspeed-current {
+  .CurrentInfo .windspeed-current {
     text-align: center;
     font-size: 16px;
   }
-  .Current .cloudiness-current {
+  .CurrentInfo .cloudiness-current {
     text-align: right;
     font-size: 16px;
   }
-  .Current .time-current {
+  .CurrentInfo .time-current {
     font-family: "Text Me One", sans-serif;
     font-size: 16px;
     text-transform: initial;

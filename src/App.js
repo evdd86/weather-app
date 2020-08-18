@@ -1,6 +1,5 @@
 import React from "react";
 import Form from "./Form";
-import Current from "./Current";
 import Forecast from "./Forecast";
 import Conversion from "./Conversion";
 import "bootstrap/dist/css/bootstrap.css";
@@ -12,10 +11,7 @@ export default function App() {
       <div className="container">
         <section className="weather-app border border-light">
           <section className="search-city">
-            <Form />
-          </section>
-          <section className="weather-today">
-            <Current defaultCity="Brussels" />
+            <Form defaultCity="Brussels" />
           </section>
           <section className="weather-next">
             <Forecast />

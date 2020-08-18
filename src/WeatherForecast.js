@@ -12,7 +12,11 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
 
-  if (loaded) {
+  if (
+    loaded &&
+    props.lat === forecastData.lat &&
+    props.lon === forecastData.lon
+  ) {
     return (
       <div className="WeatherForecast">
         <div className="d-flex flex-row justify-content-center">

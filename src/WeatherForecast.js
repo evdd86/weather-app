@@ -9,6 +9,7 @@ export default function WeatherForecast(props) {
 
   function showForecast(response) {
     setForecastData(response.data);
+    console.log(response.data);
     setLoaded(true);
   }
 

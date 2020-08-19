@@ -25,13 +25,9 @@ export default function WeatherForecastCards(props) {
   }
 
   function showForecastIcon() {
-    let icon = props.data.weather[0].icon;
+    let icon = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
     let description = props.data.weather[0].description;
-    return `<img
-                  className="icon"
-                  src=${icon}
-                  alt=${description}
-                ></img>`;
+    return <img className="icon" src={icon} alt={description}></img>;
   }
 
   return (
@@ -50,8 +46,7 @@ export default function WeatherForecastCards(props) {
               {showForecastMaxTemp()}°C
             </div>
             <div className="card-row">
-              <i className="fas fa-tint"></i>
-              {showForecastHumidity()}%
+              <i className="fas fa-tint"></i> {showForecastHumidity()}%
             </div>
           </div>
         </div>
